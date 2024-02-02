@@ -32,5 +32,33 @@
 //     }
 //     console.log(user);
 // });
+//!5
 
-require('./js-foundation/5.factory')
+
+// const {buildMakePerson} = require('./js-foundation/5.factory');
+
+// const makePerson = buildMakePerson({setId, getAge});
+
+// const obj = {name: 'ale', birthdate: '1988-09-01'};
+
+// const ale = makePerson(obj);
+
+// console.log({ale});
+
+//!6
+// const { getAge, setId, http} = require('./pluggins');
+// const getPokemonById = require('./js-foundation/6.promises');
+
+// getPokemonById(1).then((pokemon) =>console.log({pokemon}))
+// .catch((err) =>console.log('try again'))
+// .finally(()=>console.log('fin')); 
+
+ 
+//!unidad 4 - 4
+
+const {buildLogger} = require('./pluggins');
+
+const logger = buildLogger('app.js');
+ 
+logger.log('oaa ale');
+
